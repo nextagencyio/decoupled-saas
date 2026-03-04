@@ -1,0 +1,686 @@
+{
+  "model": [
+    {
+      "bundle": "landing_page",
+      "label": "Landing Page",
+      "body": false,
+      "fields": [
+        {
+          "id": "sections",
+          "type": "paragraph(hero_section|feature_grid|pricing_table|testimonial_slider|cta_section|stats|logo_collection|accordion|text_block)[]",
+          "label": "Sections"
+        }
+      ]
+    },
+    {
+      "entity": "paragraph",
+      "bundle": "hero_section",
+      "label": "Hero Section",
+      "fields": [
+        { "id": "eyebrow", "type": "string", "label": "Eyebrow Text" },
+        { "id": "title", "type": "string!", "label": "Title" },
+        { "id": "subtitle", "type": "text", "label": "Subtitle" },
+        { "id": "layout", "type": "string", "label": "Layout" },
+        { "id": "background_color", "type": "string", "label": "Background Color" },
+        { "id": "background_image", "type": "image", "label": "Background Image" },
+        { "id": "primary_cta_text", "type": "string", "label": "Primary CTA Text" },
+        { "id": "primary_cta_url", "type": "string", "label": "Primary CTA URL" },
+        { "id": "secondary_cta_text", "type": "string", "label": "Secondary CTA Text" },
+        { "id": "secondary_cta_url", "type": "string", "label": "Secondary CTA URL" }
+      ]
+    },
+    {
+      "entity": "paragraph",
+      "bundle": "feature_item",
+      "label": "Feature Item",
+      "fields": [
+        { "id": "icon", "type": "string", "label": "Icon Name" },
+        { "id": "title", "type": "string!", "label": "Title" },
+        { "id": "description", "type": "string", "label": "Description" }
+      ]
+    },
+    {
+      "entity": "paragraph",
+      "bundle": "feature_card",
+      "label": "Feature Card",
+      "fields": [
+        { "id": "icon", "type": "string", "label": "Icon Name" },
+        { "id": "title", "type": "string!", "label": "Title" },
+        { "id": "description", "type": "text", "label": "Description" },
+        { "id": "link_text", "type": "string", "label": "Link Text" },
+        { "id": "link_url", "type": "string", "label": "Link URL" }
+      ]
+    },
+    {
+      "entity": "paragraph",
+      "bundle": "feature_grid",
+      "label": "Feature Grid",
+      "fields": [
+        { "id": "eyebrow", "type": "string", "label": "Eyebrow Text" },
+        { "id": "title", "type": "string", "label": "Title" },
+        { "id": "subtitle", "type": "text", "label": "Subtitle" },
+        { "id": "columns", "type": "string", "label": "Columns" },
+        { "id": "cards", "type": "paragraph(feature_card)[]", "label": "Feature Cards" }
+      ]
+    },
+    {
+      "entity": "paragraph",
+      "bundle": "pricing_tier",
+      "label": "Pricing Tier",
+      "fields": [
+        { "id": "name", "type": "string!", "label": "Tier Name" },
+        { "id": "price", "type": "string!", "label": "Price" },
+        { "id": "billing_period", "type": "string", "label": "Billing Period" },
+        { "id": "description", "type": "string", "label": "Description" },
+        { "id": "features", "type": "string[]", "label": "Features" },
+        { "id": "is_featured", "type": "bool", "label": "Featured Tier" },
+        { "id": "cta_text", "type": "string", "label": "CTA Text" },
+        { "id": "cta_url", "type": "string", "label": "CTA URL" }
+      ]
+    },
+    {
+      "entity": "paragraph",
+      "bundle": "pricing_table",
+      "label": "Pricing Table",
+      "fields": [
+        { "id": "eyebrow", "type": "string", "label": "Eyebrow Text" },
+        { "id": "title", "type": "string", "label": "Title" },
+        { "id": "subtitle", "type": "text", "label": "Subtitle" },
+        { "id": "tiers", "type": "paragraph(pricing_tier)[]", "label": "Pricing Tiers" }
+      ]
+    },
+    {
+      "entity": "paragraph",
+      "bundle": "testimonial",
+      "label": "Testimonial",
+      "fields": [
+        { "id": "quote", "type": "text!", "label": "Quote" },
+        { "id": "author_name", "type": "string!", "label": "Author Name" },
+        { "id": "author_title", "type": "string", "label": "Author Title" },
+        { "id": "author_company", "type": "string", "label": "Author Company" },
+        { "id": "author_image", "type": "image", "label": "Author Image" },
+        { "id": "rating", "type": "string", "label": "Rating" }
+      ]
+    },
+    {
+      "entity": "paragraph",
+      "bundle": "testimonial_slider",
+      "label": "Testimonial Slider",
+      "fields": [
+        { "id": "eyebrow", "type": "string", "label": "Eyebrow Text" },
+        { "id": "title", "type": "string", "label": "Title" },
+        { "id": "layout", "type": "string", "label": "Layout" },
+        { "id": "testimonials", "type": "paragraph(testimonial)[]", "label": "Testimonials" }
+      ]
+    },
+    {
+      "entity": "paragraph",
+      "bundle": "cta_section",
+      "label": "CTA Section",
+      "fields": [
+        { "id": "eyebrow", "type": "string", "label": "Eyebrow Text" },
+        { "id": "title", "type": "string!", "label": "Title" },
+        { "id": "subtitle", "type": "text", "label": "Subtitle" },
+        { "id": "primary_cta_text", "type": "string", "label": "Primary CTA Text" },
+        { "id": "primary_cta_url", "type": "string", "label": "Primary CTA URL" },
+        { "id": "secondary_cta_text", "type": "string", "label": "Secondary CTA Text" },
+        { "id": "secondary_cta_url", "type": "string", "label": "Secondary CTA URL" },
+        { "id": "background_color", "type": "string", "label": "Background Color" }
+      ]
+    },
+    {
+      "entity": "paragraph",
+      "bundle": "stat_item",
+      "label": "Stat Item",
+      "fields": [
+        { "id": "value", "type": "string!", "label": "Value" },
+        { "id": "label", "type": "string!", "label": "Label" },
+        { "id": "description", "type": "string", "label": "Description" }
+      ]
+    },
+    {
+      "entity": "paragraph",
+      "bundle": "stats",
+      "label": "Stats Section",
+      "fields": [
+        { "id": "eyebrow", "type": "string", "label": "Eyebrow Text" },
+        { "id": "title", "type": "string", "label": "Title" },
+        { "id": "background_color", "type": "string", "label": "Background Color" },
+        { "id": "stats", "type": "paragraph(stat_item)[]", "label": "Stats" }
+      ]
+    },
+    {
+      "entity": "paragraph",
+      "bundle": "logo",
+      "label": "Logo",
+      "fields": [
+        { "id": "name", "type": "string!", "label": "Company Name" },
+        { "id": "image", "type": "image", "label": "Logo Image" },
+        { "id": "url", "type": "string", "label": "Website URL" }
+      ]
+    },
+    {
+      "entity": "paragraph",
+      "bundle": "logo_collection",
+      "label": "Logo Collection",
+      "fields": [
+        { "id": "eyebrow", "type": "string", "label": "Eyebrow Text" },
+        { "id": "title", "type": "string", "label": "Title" },
+        { "id": "logos", "type": "paragraph(logo)[]", "label": "Logos" }
+      ]
+    },
+    {
+      "entity": "paragraph",
+      "bundle": "faq_item",
+      "label": "FAQ Item",
+      "fields": [
+        { "id": "question", "type": "string!", "label": "Question" },
+        { "id": "answer", "type": "text!", "label": "Answer" }
+      ]
+    },
+    {
+      "entity": "paragraph",
+      "bundle": "accordion",
+      "label": "Accordion / FAQ",
+      "fields": [
+        { "id": "eyebrow", "type": "string", "label": "Eyebrow Text" },
+        { "id": "title", "type": "string", "label": "Title" },
+        { "id": "subtitle", "type": "text", "label": "Subtitle" },
+        { "id": "items", "type": "paragraph(faq_item)[]", "label": "FAQ Items" }
+      ]
+    },
+    {
+      "entity": "paragraph",
+      "bundle": "text_block",
+      "label": "Text Section",
+      "fields": [
+        { "id": "eyebrow", "type": "string", "label": "Eyebrow Text" },
+        { "id": "title", "type": "string", "label": "Title" },
+        { "id": "content", "type": "text!", "label": "Content" },
+        { "id": "alignment", "type": "string", "label": "Alignment" },
+        { "id": "cta_text", "type": "string", "label": "CTA Text" },
+        { "id": "cta_url", "type": "string", "label": "CTA URL" }
+      ]
+    }
+  ],
+  "content": [
+    {
+      "id": "hero-main",
+      "type": "paragraph.hero_section",
+      "values": {
+        "eyebrow": "CloudFlow Platform",
+        "title": "Automate your workflows. Accelerate your growth.",
+        "subtitle": "CloudFlow is the all-in-one SaaS platform that streamlines operations, connects your tools, and gives your team superpowers. Start free today.",
+        "layout": "centered",
+        "background_color": "gradient",
+        "background_image": {
+          "url": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920&h=1080&fit=crop&q=80",
+          "alt": "Abstract cloud technology background"
+        },
+        "primary_cta_text": "Start Free Trial",
+        "primary_cta_url": "/signup",
+        "secondary_cta_text": "Watch Demo",
+        "secondary_cta_url": "/demo"
+      }
+    },
+    {
+      "id": "logo-slack",
+      "type": "paragraph.logo",
+      "values": { "name": "Slack", "url": "https://slack.com" }
+    },
+    {
+      "id": "logo-salesforce",
+      "type": "paragraph.logo",
+      "values": { "name": "Salesforce", "url": "https://salesforce.com" }
+    },
+    {
+      "id": "logo-hubspot",
+      "type": "paragraph.logo",
+      "values": { "name": "HubSpot", "url": "https://hubspot.com" }
+    },
+    {
+      "id": "logo-stripe",
+      "type": "paragraph.logo",
+      "values": { "name": "Stripe", "url": "https://stripe.com" }
+    },
+    {
+      "id": "logo-zapier",
+      "type": "paragraph.logo",
+      "values": { "name": "Zapier", "url": "https://zapier.com" }
+    },
+    {
+      "id": "logo-notion",
+      "type": "paragraph.logo",
+      "values": { "name": "Notion", "url": "https://notion.so" }
+    },
+    {
+      "id": "logo-section",
+      "type": "paragraph.logo_collection",
+      "values": {
+        "eyebrow": "Trusted By",
+        "title": "Powering 10,000+ businesses worldwide",
+        "logos": ["@logo-slack", "@logo-salesforce", "@logo-hubspot", "@logo-stripe", "@logo-zapier", "@logo-notion"]
+      }
+    },
+    {
+      "id": "stat-1",
+      "type": "paragraph.stat_item",
+      "values": { "value": "10K+", "label": "Active Teams", "description": "Companies trust CloudFlow daily" }
+    },
+    {
+      "id": "stat-2",
+      "type": "paragraph.stat_item",
+      "values": { "value": "99.99%", "label": "Uptime SLA", "description": "Enterprise-grade reliability" }
+    },
+    {
+      "id": "stat-3",
+      "type": "paragraph.stat_item",
+      "values": { "value": "3.2M", "label": "Workflows Run", "description": "Automated tasks last month" }
+    },
+    {
+      "id": "stat-4",
+      "type": "paragraph.stat_item",
+      "values": { "value": "150+", "label": "Integrations", "description": "Connect any tool in your stack" }
+    },
+    {
+      "id": "stats-section",
+      "type": "paragraph.stats",
+      "values": {
+        "background_color": "light",
+        "stats": ["@stat-1", "@stat-2", "@stat-3", "@stat-4"]
+      }
+    },
+    {
+      "id": "feature-card-1",
+      "type": "paragraph.feature_card",
+      "values": {
+        "icon": "Workflow",
+        "title": "Visual Workflow Builder",
+        "description": "Design complex automations with our drag-and-drop builder. No code required. Connect triggers, conditions, and actions in minutes.",
+        "link_text": "Learn more",
+        "link_url": "/features/workflows"
+      }
+    },
+    {
+      "id": "feature-card-2",
+      "type": "paragraph.feature_card",
+      "values": {
+        "icon": "BarChart3",
+        "title": "Real-Time Analytics",
+        "description": "Track every metric that matters. Custom dashboards, automated reports, and AI-powered insights delivered to your inbox.",
+        "link_text": "Learn more",
+        "link_url": "/features/analytics"
+      }
+    },
+    {
+      "id": "feature-card-3",
+      "type": "paragraph.feature_card",
+      "values": {
+        "icon": "Shield",
+        "title": "Enterprise Security",
+        "description": "SOC 2 Type II certified. End-to-end encryption, SSO, RBAC, and audit logs. Your data is protected at every layer.",
+        "link_text": "Learn more",
+        "link_url": "/features/security"
+      }
+    },
+    {
+      "id": "feature-card-4",
+      "type": "paragraph.feature_card",
+      "values": {
+        "icon": "Plug",
+        "title": "150+ Integrations",
+        "description": "Connect CloudFlow with Slack, Salesforce, HubSpot, Stripe, and 150+ other tools your team already uses.",
+        "link_text": "View integrations",
+        "link_url": "/integrations"
+      }
+    },
+    {
+      "id": "feature-card-5",
+      "type": "paragraph.feature_card",
+      "values": {
+        "icon": "Users",
+        "title": "Team Collaboration",
+        "description": "Shared workspaces, real-time editing, comments, and approvals. Keep everyone aligned and moving fast.",
+        "link_text": "Learn more",
+        "link_url": "/features/collaboration"
+      }
+    },
+    {
+      "id": "feature-card-6",
+      "type": "paragraph.feature_card",
+      "values": {
+        "icon": "Bot",
+        "title": "AI Assistant",
+        "description": "Let CloudFlow AI suggest optimizations, detect anomalies, and automate repetitive tasks across your workflows.",
+        "link_text": "Learn more",
+        "link_url": "/features/ai"
+      }
+    },
+    {
+      "id": "features-section",
+      "type": "paragraph.feature_grid",
+      "values": {
+        "eyebrow": "Features",
+        "title": "Everything you need to scale operations",
+        "subtitle": "A unified platform that replaces a dozen tools. Built for teams that demand speed, reliability, and flexibility.",
+        "columns": "3",
+        "cards": ["@feature-card-1", "@feature-card-2", "@feature-card-3", "@feature-card-4", "@feature-card-5", "@feature-card-6"]
+      }
+    },
+    {
+      "id": "pricing-free",
+      "type": "paragraph.pricing_tier",
+      "values": {
+        "name": "Free",
+        "price": "$0",
+        "billing_period": "forever",
+        "description": "For individuals and small projects",
+        "features": ["Up to 5 workflows", "1,000 tasks/month", "3 integrations", "Community support", "Basic analytics"],
+        "is_featured": false,
+        "cta_text": "Get Started",
+        "cta_url": "/signup?plan=free"
+      }
+    },
+    {
+      "id": "pricing-pro",
+      "type": "paragraph.pricing_tier",
+      "values": {
+        "name": "Pro",
+        "price": "$49",
+        "billing_period": "/month",
+        "description": "For growing teams and businesses",
+        "features": ["Unlimited workflows", "50,000 tasks/month", "All integrations", "Priority support", "Advanced analytics", "Custom dashboards", "Team workspaces", "API access"],
+        "is_featured": true,
+        "cta_text": "Start Free Trial",
+        "cta_url": "/signup?plan=pro"
+      }
+    },
+    {
+      "id": "pricing-enterprise",
+      "type": "paragraph.pricing_tier",
+      "values": {
+        "name": "Enterprise",
+        "price": "Custom",
+        "billing_period": "",
+        "description": "For large organizations with custom needs",
+        "features": ["Everything in Pro", "Unlimited tasks", "SSO & SAML", "Dedicated account manager", "Custom SLA", "On-premise deployment", "Advanced security controls", "Custom integrations"],
+        "is_featured": false,
+        "cta_text": "Contact Sales",
+        "cta_url": "/contact-sales"
+      }
+    },
+    {
+      "id": "pricing-section",
+      "type": "paragraph.pricing_table",
+      "values": {
+        "eyebrow": "Pricing",
+        "title": "Simple, predictable pricing",
+        "subtitle": "Start free. Upgrade when you're ready. No surprises on your bill.",
+        "tiers": ["@pricing-free", "@pricing-pro", "@pricing-enterprise"]
+      }
+    },
+    {
+      "id": "testimonial-1",
+      "type": "paragraph.testimonial",
+      "values": {
+        "quote": "CloudFlow cut our manual processes by 80%. What used to take our ops team a full day now runs automatically before anyone gets to the office.",
+        "author_name": "Rachel Torres",
+        "author_title": "VP of Operations",
+        "author_company": "ScaleUp Inc.",
+        "author_image": {
+          "url": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&h=200&fit=crop&crop=face&q=80",
+          "alt": "Rachel Torres headshot"
+        },
+        "rating": "5"
+      }
+    },
+    {
+      "id": "testimonial-2",
+      "type": "paragraph.testimonial",
+      "values": {
+        "quote": "We replaced four separate tools with CloudFlow. The integrations are seamless and the workflow builder is incredibly intuitive. Our team adopted it in a week.",
+        "author_name": "David Kim",
+        "author_title": "CTO",
+        "author_company": "Meridian Labs",
+        "author_image": {
+          "url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face&q=80",
+          "alt": "David Kim headshot"
+        },
+        "rating": "5"
+      }
+    },
+    {
+      "id": "testimonial-3",
+      "type": "paragraph.testimonial",
+      "values": {
+        "quote": "The analytics alone are worth the price. We finally have visibility into our pipeline and can make data-driven decisions in real time.",
+        "author_name": "Priya Patel",
+        "author_title": "Head of Growth",
+        "author_company": "Apex Digital",
+        "author_image": {
+          "url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200&h=200&fit=crop&crop=face&q=80",
+          "alt": "Priya Patel headshot"
+        },
+        "rating": "5"
+      }
+    },
+    {
+      "id": "quotes-section",
+      "type": "paragraph.testimonial_slider",
+      "values": {
+        "eyebrow": "Customer Stories",
+        "title": "Trusted by fast-growing teams",
+        "layout": "grid",
+        "testimonials": ["@testimonial-1", "@testimonial-2", "@testimonial-3"]
+      }
+    },
+    {
+      "id": "faq-1",
+      "type": "paragraph.faq_item",
+      "values": {
+        "question": "How quickly can I get started with CloudFlow?",
+        "answer": "<p>You can sign up and build your first workflow in under 5 minutes. Our templates library has 200+ pre-built automations for common use cases like lead routing, customer onboarding, and invoice processing.</p>"
+      }
+    },
+    {
+      "id": "faq-2",
+      "type": "paragraph.faq_item",
+      "values": {
+        "question": "Can I migrate from my current automation tool?",
+        "answer": "<p>Yes. We offer free migration assistance for Pro and Enterprise plans. Our team will help you recreate your workflows in CloudFlow and ensure zero downtime during the transition.</p>"
+      }
+    },
+    {
+      "id": "faq-3",
+      "type": "paragraph.faq_item",
+      "values": {
+        "question": "What integrations do you support?",
+        "answer": "<p>CloudFlow connects with 150+ tools including Slack, Salesforce, HubSpot, Stripe, Google Workspace, Microsoft 365, Jira, GitHub, and many more. We also offer a REST API and webhooks for custom integrations.</p>"
+      }
+    },
+    {
+      "id": "faq-4",
+      "type": "paragraph.faq_item",
+      "values": {
+        "question": "Is my data secure?",
+        "answer": "<p>Absolutely. CloudFlow is SOC 2 Type II certified with end-to-end encryption, SSO support, and role-based access controls. We never sell your data and comply with GDPR, CCPA, and HIPAA requirements.</p>"
+      }
+    },
+    {
+      "id": "faq-5",
+      "type": "paragraph.faq_item",
+      "values": {
+        "question": "What happens if I exceed my task limit?",
+        "answer": "<p>We'll notify you when you reach 80% of your plan limit. You can upgrade anytime, and we never stop your workflows mid-execution. Overages are billed at a reasonable per-task rate.</p>"
+      }
+    },
+    {
+      "id": "faq-section",
+      "type": "paragraph.accordion",
+      "values": {
+        "eyebrow": "FAQ",
+        "title": "Frequently asked questions",
+        "subtitle": "Everything you need to know about CloudFlow. Can't find your answer? Contact our support team.",
+        "items": ["@faq-1", "@faq-2", "@faq-3", "@faq-4", "@faq-5"]
+      }
+    },
+    {
+      "id": "cta-main",
+      "type": "paragraph.cta_section",
+      "values": {
+        "eyebrow": "Get Started",
+        "title": "Ready to automate your workflows?",
+        "subtitle": "Join 10,000+ teams that trust CloudFlow to run their business. Start your free trial today -- no credit card required.",
+        "primary_cta_text": "Start Free Trial",
+        "primary_cta_url": "/signup",
+        "secondary_cta_text": "Talk to Sales",
+        "secondary_cta_url": "/contact-sales",
+        "background_color": "dark"
+      }
+    },
+    {
+      "id": "homepage",
+      "type": "node.landing_page",
+      "path": "/",
+      "values": {
+        "title": "CloudFlow - Automate Your Workflows",
+        "sections": [
+          "@hero-main",
+          "@logo-section",
+          "@stats-section",
+          "@features-section",
+          "@pricing-section",
+          "@quotes-section",
+          "@faq-section",
+          "@cta-main"
+        ]
+      }
+    },
+    {
+      "id": "features-hero",
+      "type": "paragraph.hero_section",
+      "values": {
+        "eyebrow": "Features",
+        "title": "Built for teams that move fast",
+        "subtitle": "Discover the tools and capabilities that make CloudFlow the platform of choice for high-performing teams.",
+        "layout": "centered",
+        "background_color": "gradient"
+      }
+    },
+    {
+      "id": "features-text",
+      "type": "paragraph.text_block",
+      "values": {
+        "title": "Why CloudFlow?",
+        "content": "<p>CloudFlow was built from the ground up to solve the operational challenges that hold teams back. We combine workflow automation, real-time analytics, and seamless integrations into a single platform that your entire organization can rally around.</p><p>Unlike point solutions that only address one problem, CloudFlow connects your entire operational stack -- from lead generation to customer success -- giving you end-to-end visibility and control.</p>",
+        "alignment": "left",
+        "cta_text": "Start Free Trial",
+        "cta_url": "/signup"
+      }
+    },
+    {
+      "id": "features-page",
+      "type": "node.landing_page",
+      "path": "/features",
+      "values": {
+        "title": "Features | CloudFlow",
+        "sections": [
+          "@features-hero",
+          "@features-section",
+          "@features-text",
+          "@stats-section",
+          "@cta-main"
+        ]
+      }
+    },
+    {
+      "id": "pricing-hero",
+      "type": "paragraph.hero_section",
+      "values": {
+        "eyebrow": "Pricing",
+        "title": "Plans that scale with your business",
+        "subtitle": "Start free, pay only for what you use. Upgrade or downgrade anytime.",
+        "layout": "centered"
+      }
+    },
+    {
+      "id": "pricing-page",
+      "type": "node.landing_page",
+      "path": "/pricing",
+      "values": {
+        "title": "Pricing | CloudFlow",
+        "sections": [
+          "@pricing-hero",
+          "@pricing-section",
+          "@faq-section",
+          "@cta-main"
+        ]
+      }
+    },
+    {
+      "id": "about-hero",
+      "type": "paragraph.hero_section",
+      "values": {
+        "eyebrow": "About Us",
+        "title": "We're building the future of work automation",
+        "subtitle": "Founded in 2021, CloudFlow was born from a simple idea: teams shouldn't spend time on repetitive tasks when software can do it better.",
+        "layout": "centered",
+        "background_color": "light"
+      }
+    },
+    {
+      "id": "about-text",
+      "type": "paragraph.text_block",
+      "values": {
+        "title": "Our Mission",
+        "content": "<p>At CloudFlow, we believe that every team deserves access to powerful automation tools -- not just enterprises with massive IT budgets. Our mission is to democratize workflow automation, making it accessible, affordable, and delightful to use.</p><p>We're a team of 85 people spread across San Francisco, London, and Singapore. We're backed by leading venture firms and are profitable, serving customers in over 40 countries.</p>",
+        "alignment": "left"
+      }
+    },
+    {
+      "id": "team-card-1",
+      "type": "paragraph.feature_card",
+      "values": { "icon": "User", "title": "Maya Chen", "description": "CEO & Co-founder. Previously product lead at Atlassian.", "link_text": "LinkedIn", "link_url": "#" }
+    },
+    {
+      "id": "team-card-2",
+      "type": "paragraph.feature_card",
+      "values": { "icon": "User", "title": "James Okafor", "description": "CTO & Co-founder. Former principal engineer at AWS.", "link_text": "LinkedIn", "link_url": "#" }
+    },
+    {
+      "id": "team-card-3",
+      "type": "paragraph.feature_card",
+      "values": { "icon": "User", "title": "Sophie Laurent", "description": "VP Engineering. Built infrastructure teams at Datadog.", "link_text": "LinkedIn", "link_url": "#" }
+    },
+    {
+      "id": "team-card-4",
+      "type": "paragraph.feature_card",
+      "values": { "icon": "User", "title": "Arun Mehta", "description": "VP Product. Former head of product at Notion.", "link_text": "LinkedIn", "link_url": "#" }
+    },
+    {
+      "id": "team-section",
+      "type": "paragraph.feature_grid",
+      "values": {
+        "eyebrow": "Leadership",
+        "title": "Meet the team behind CloudFlow",
+        "columns": "4",
+        "cards": ["@team-card-1", "@team-card-2", "@team-card-3", "@team-card-4"]
+      }
+    },
+    {
+      "id": "about-page",
+      "type": "node.landing_page",
+      "path": "/about",
+      "values": {
+        "title": "About CloudFlow",
+        "sections": [
+          "@about-hero",
+          "@about-text",
+          "@stats-section",
+          "@team-section",
+          "@cta-main"
+        ]
+      }
+    }
+  ]
+}

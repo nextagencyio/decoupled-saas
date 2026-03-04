@@ -1,0 +1,973 @@
+{
+  "/": {
+    "data": {
+      "route": {
+        "__typename": "RouteInternal",
+        "entity": {
+          "__typename": "NodeLandingPage",
+          "id": "homepage",
+          "title": "CloudFlow - Automate Your Workflows",
+          "path": "/",
+          "sections": [
+            {
+              "__typename": "ParagraphHeroSection",
+              "id": "hero-main",
+              "title": "Automate your workflows. Accelerate your growth.",
+              "eyebrow": "CloudFlow Platform",
+              "subtitle": {
+                "processed": "CloudFlow is the all-in-one SaaS platform that streamlines operations, connects your tools, and gives your team superpowers. Start free today.",
+                "summary": "CloudFlow is the all-in-one SaaS platform that streamlines operations, connects your tools, and gives your team superpowers. Start free today."
+              },
+              "layout": "centered",
+              "backgroundColor": "gradient",
+              "backgroundImage": {
+                "url": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920&h=1080&fit=crop&q=80",
+                "alt": "Abstract cloud technology background",
+                "width": 800,
+                "height": 533,
+                "variations": [
+                  {
+                    "name": "LARGE",
+                    "url": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920&h=1080&fit=crop&q=80",
+                    "width": 800,
+                    "height": 533
+                  },
+                  {
+                    "name": "MEDIUM",
+                    "url": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920&h=1080&fit=crop&q=80",
+                    "width": 480,
+                    "height": 320
+                  },
+                  {
+                    "name": "THUMBNAIL",
+                    "url": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920&h=1080&fit=crop&q=80",
+                    "width": 200,
+                    "height": 133
+                  }
+                ]
+              },
+              "primaryCtaText": "Start Free Trial",
+              "primaryCtaUrl": "/signup",
+              "secondaryCtaText": "Watch Demo",
+              "secondaryCtaUrl": "/demo"
+            },
+            {
+              "__typename": "ParagraphLogoCollection",
+              "id": "logo-section",
+              "title": "Powering 10,000+ businesses worldwide",
+              "eyebrow": "Trusted By",
+              "logos": [
+                {
+                  "__typename": "ParagraphLogo",
+                  "id": "logo-slack",
+                  "title": "",
+                  "name": "Slack",
+                  "url": "https://slack.com"
+                },
+                {
+                  "__typename": "ParagraphLogo",
+                  "id": "logo-salesforce",
+                  "title": "",
+                  "name": "Salesforce",
+                  "url": "https://salesforce.com"
+                },
+                {
+                  "__typename": "ParagraphLogo",
+                  "id": "logo-hubspot",
+                  "title": "",
+                  "name": "HubSpot",
+                  "url": "https://hubspot.com"
+                },
+                {
+                  "__typename": "ParagraphLogo",
+                  "id": "logo-stripe",
+                  "title": "",
+                  "name": "Stripe",
+                  "url": "https://stripe.com"
+                },
+                {
+                  "__typename": "ParagraphLogo",
+                  "id": "logo-zapier",
+                  "title": "",
+                  "name": "Zapier",
+                  "url": "https://zapier.com"
+                },
+                {
+                  "__typename": "ParagraphLogo",
+                  "id": "logo-notion",
+                  "title": "",
+                  "name": "Notion",
+                  "url": "https://notion.so"
+                }
+              ]
+            },
+            {
+              "__typename": "ParagraphStats",
+              "id": "stats-section",
+              "title": "",
+              "backgroundColor": "light",
+              "stats": [
+                {
+                  "__typename": "ParagraphStatItem",
+                  "id": "stat-1",
+                  "title": "",
+                  "value": "10K+",
+                  "label": "Active Teams",
+                  "description": "Companies trust CloudFlow daily"
+                },
+                {
+                  "__typename": "ParagraphStatItem",
+                  "id": "stat-2",
+                  "title": "",
+                  "value": "99.99%",
+                  "label": "Uptime SLA",
+                  "description": "Enterprise-grade reliability"
+                },
+                {
+                  "__typename": "ParagraphStatItem",
+                  "id": "stat-3",
+                  "title": "",
+                  "value": "3.2M",
+                  "label": "Workflows Run",
+                  "description": "Automated tasks last month"
+                },
+                {
+                  "__typename": "ParagraphStatItem",
+                  "id": "stat-4",
+                  "title": "",
+                  "value": "150+",
+                  "label": "Integrations",
+                  "description": "Connect any tool in your stack"
+                }
+              ]
+            },
+            {
+              "__typename": "ParagraphFeatureGrid",
+              "id": "features-section",
+              "title": "Everything you need to scale operations",
+              "eyebrow": "Features",
+              "subtitle": {
+                "processed": "A unified platform that replaces a dozen tools. Built for teams that demand speed, reliability, and flexibility.",
+                "summary": "A unified platform that replaces a dozen tools. Built for teams that demand speed, reliability, and flexibility."
+              },
+              "columns": "3",
+              "cards": [
+                {
+                  "__typename": "ParagraphFeatureCard",
+                  "id": "feature-card-1",
+                  "title": "Visual Workflow Builder",
+                  "icon": "Workflow",
+                  "description": {
+                    "processed": "Design complex automations with our drag-and-drop builder. No code required. Connect triggers, conditions, and actions in minutes.",
+                    "summary": "Design complex automations with our drag-and-drop builder. No code required. Connect triggers, conditions, and actions in minutes."
+                  },
+                  "linkText": "Learn more",
+                  "linkUrl": "/features/workflows"
+                },
+                {
+                  "__typename": "ParagraphFeatureCard",
+                  "id": "feature-card-2",
+                  "title": "Real-Time Analytics",
+                  "icon": "BarChart3",
+                  "description": {
+                    "processed": "Track every metric that matters. Custom dashboards, automated reports, and AI-powered insights delivered to your inbox.",
+                    "summary": "Track every metric that matters. Custom dashboards, automated reports, and AI-powered insights delivered to your inbox."
+                  },
+                  "linkText": "Learn more",
+                  "linkUrl": "/features/analytics"
+                },
+                {
+                  "__typename": "ParagraphFeatureCard",
+                  "id": "feature-card-3",
+                  "title": "Enterprise Security",
+                  "icon": "Shield",
+                  "description": {
+                    "processed": "SOC 2 Type II certified. End-to-end encryption, SSO, RBAC, and audit logs. Your data is protected at every layer.",
+                    "summary": "SOC 2 Type II certified. End-to-end encryption, SSO, RBAC, and audit logs. Your data is protected at every layer."
+                  },
+                  "linkText": "Learn more",
+                  "linkUrl": "/features/security"
+                },
+                {
+                  "__typename": "ParagraphFeatureCard",
+                  "id": "feature-card-4",
+                  "title": "150+ Integrations",
+                  "icon": "Plug",
+                  "description": {
+                    "processed": "Connect CloudFlow with Slack, Salesforce, HubSpot, Stripe, and 150+ other tools your team already uses.",
+                    "summary": "Connect CloudFlow with Slack, Salesforce, HubSpot, Stripe, and 150+ other tools your team already uses."
+                  },
+                  "linkText": "View integrations",
+                  "linkUrl": "/integrations"
+                },
+                {
+                  "__typename": "ParagraphFeatureCard",
+                  "id": "feature-card-5",
+                  "title": "Team Collaboration",
+                  "icon": "Users",
+                  "description": {
+                    "processed": "Shared workspaces, real-time editing, comments, and approvals. Keep everyone aligned and moving fast.",
+                    "summary": "Shared workspaces, real-time editing, comments, and approvals. Keep everyone aligned and moving fast."
+                  },
+                  "linkText": "Learn more",
+                  "linkUrl": "/features/collaboration"
+                },
+                {
+                  "__typename": "ParagraphFeatureCard",
+                  "id": "feature-card-6",
+                  "title": "AI Assistant",
+                  "icon": "Bot",
+                  "description": {
+                    "processed": "Let CloudFlow AI suggest optimizations, detect anomalies, and automate repetitive tasks across your workflows.",
+                    "summary": "Let CloudFlow AI suggest optimizations, detect anomalies, and automate repetitive tasks across your workflows."
+                  },
+                  "linkText": "Learn more",
+                  "linkUrl": "/features/ai"
+                }
+              ]
+            },
+            {
+              "__typename": "ParagraphPricingTable",
+              "id": "pricing-section",
+              "title": "Simple, predictable pricing",
+              "eyebrow": "Pricing",
+              "subtitle": {
+                "processed": "Start free. Upgrade when you're ready. No surprises on your bill.",
+                "summary": "Start free. Upgrade when you're ready. No surprises on your bill."
+              },
+              "tiers": [
+                {
+                  "__typename": "ParagraphPricingTier",
+                  "id": "pricing-free",
+                  "title": "",
+                  "name": "Free",
+                  "price": "$0",
+                  "billingPeriod": "forever",
+                  "description": "For individuals and small projects",
+                  "features": [
+                    "Up to 5 workflows",
+                    "1,000 tasks/month",
+                    "3 integrations",
+                    "Community support",
+                    "Basic analytics"
+                  ],
+                  "isFeatured": false,
+                  "ctaText": "Get Started",
+                  "ctaUrl": "/signup?plan=free"
+                },
+                {
+                  "__typename": "ParagraphPricingTier",
+                  "id": "pricing-pro",
+                  "title": "",
+                  "name": "Pro",
+                  "price": "$49",
+                  "billingPeriod": "/month",
+                  "description": "For growing teams and businesses",
+                  "features": [
+                    "Unlimited workflows",
+                    "50,000 tasks/month",
+                    "All integrations",
+                    "Priority support",
+                    "Advanced analytics",
+                    "Custom dashboards",
+                    "Team workspaces",
+                    "API access"
+                  ],
+                  "isFeatured": true,
+                  "ctaText": "Start Free Trial",
+                  "ctaUrl": "/signup?plan=pro"
+                },
+                {
+                  "__typename": "ParagraphPricingTier",
+                  "id": "pricing-enterprise",
+                  "title": "",
+                  "name": "Enterprise",
+                  "price": "Custom",
+                  "billingPeriod": "",
+                  "description": "For large organizations with custom needs",
+                  "features": [
+                    "Everything in Pro",
+                    "Unlimited tasks",
+                    "SSO & SAML",
+                    "Dedicated account manager",
+                    "Custom SLA",
+                    "On-premise deployment",
+                    "Advanced security controls",
+                    "Custom integrations"
+                  ],
+                  "isFeatured": false,
+                  "ctaText": "Contact Sales",
+                  "ctaUrl": "/contact-sales"
+                }
+              ]
+            },
+            {
+              "__typename": "ParagraphTestimonialSlider",
+              "id": "quotes-section",
+              "title": "Trusted by fast-growing teams",
+              "eyebrow": "Customer Stories",
+              "layout": "grid",
+              "testimonials": [
+                {
+                  "__typename": "ParagraphTestimonial",
+                  "id": "testimonial-1",
+                  "title": "",
+                  "quote": "CloudFlow cut our manual processes by 80%. What used to take our ops team a full day now runs automatically before anyone gets to the office.",
+                  "authorName": "Rachel Torres",
+                  "authorTitle": "VP of Operations",
+                  "authorCompany": "ScaleUp Inc.",
+                  "authorImage": {
+                    "url": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&h=200&fit=crop&crop=face&q=80",
+                    "alt": "Rachel Torres headshot",
+                    "width": 800,
+                    "height": 533,
+                    "variations": [
+                      {
+                        "name": "LARGE",
+                        "url": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&h=200&fit=crop&crop=face&q=80",
+                        "width": 800,
+                        "height": 533
+                      },
+                      {
+                        "name": "MEDIUM",
+                        "url": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&h=200&fit=crop&crop=face&q=80",
+                        "width": 480,
+                        "height": 320
+                      },
+                      {
+                        "name": "THUMBNAIL",
+                        "url": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&h=200&fit=crop&crop=face&q=80",
+                        "width": 200,
+                        "height": 133
+                      }
+                    ]
+                  },
+                  "rating": "5"
+                },
+                {
+                  "__typename": "ParagraphTestimonial",
+                  "id": "testimonial-2",
+                  "title": "",
+                  "quote": "We replaced four separate tools with CloudFlow. The integrations are seamless and the workflow builder is incredibly intuitive. Our team adopted it in a week.",
+                  "authorName": "David Kim",
+                  "authorTitle": "CTO",
+                  "authorCompany": "Meridian Labs",
+                  "authorImage": {
+                    "url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face&q=80",
+                    "alt": "David Kim headshot",
+                    "width": 800,
+                    "height": 533,
+                    "variations": [
+                      {
+                        "name": "LARGE",
+                        "url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face&q=80",
+                        "width": 800,
+                        "height": 533
+                      },
+                      {
+                        "name": "MEDIUM",
+                        "url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face&q=80",
+                        "width": 480,
+                        "height": 320
+                      },
+                      {
+                        "name": "THUMBNAIL",
+                        "url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face&q=80",
+                        "width": 200,
+                        "height": 133
+                      }
+                    ]
+                  },
+                  "rating": "5"
+                },
+                {
+                  "__typename": "ParagraphTestimonial",
+                  "id": "testimonial-3",
+                  "title": "",
+                  "quote": "The analytics alone are worth the price. We finally have visibility into our pipeline and can make data-driven decisions in real time.",
+                  "authorName": "Priya Patel",
+                  "authorTitle": "Head of Growth",
+                  "authorCompany": "Apex Digital",
+                  "authorImage": {
+                    "url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200&h=200&fit=crop&crop=face&q=80",
+                    "alt": "Priya Patel headshot",
+                    "width": 800,
+                    "height": 533,
+                    "variations": [
+                      {
+                        "name": "LARGE",
+                        "url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200&h=200&fit=crop&crop=face&q=80",
+                        "width": 800,
+                        "height": 533
+                      },
+                      {
+                        "name": "MEDIUM",
+                        "url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200&h=200&fit=crop&crop=face&q=80",
+                        "width": 480,
+                        "height": 320
+                      },
+                      {
+                        "name": "THUMBNAIL",
+                        "url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200&h=200&fit=crop&crop=face&q=80",
+                        "width": 200,
+                        "height": 133
+                      }
+                    ]
+                  },
+                  "rating": "5"
+                }
+              ]
+            },
+            {
+              "__typename": "ParagraphAccordion",
+              "id": "faq-section",
+              "title": "Frequently asked questions",
+              "eyebrow": "FAQ",
+              "subtitle": {
+                "processed": "Everything you need to know about CloudFlow. Can't find your answer? Contact our support team.",
+                "summary": "Everything you need to know about CloudFlow. Can't find your answer? Contact our support team."
+              },
+              "items": [
+                {
+                  "__typename": "ParagraphFaqItem",
+                  "id": "faq-1",
+                  "title": "",
+                  "question": "How quickly can I get started with CloudFlow?",
+                  "answer": "<p>You can sign up and build your first workflow in under 5 minutes. Our templates library has 200+ pre-built automations for common use cases like lead routing, customer onboarding, and invoice processing.</p>"
+                },
+                {
+                  "__typename": "ParagraphFaqItem",
+                  "id": "faq-2",
+                  "title": "",
+                  "question": "Can I migrate from my current automation tool?",
+                  "answer": "<p>Yes. We offer free migration assistance for Pro and Enterprise plans. Our team will help you recreate your workflows in CloudFlow and ensure zero downtime during the transition.</p>"
+                },
+                {
+                  "__typename": "ParagraphFaqItem",
+                  "id": "faq-3",
+                  "title": "",
+                  "question": "What integrations do you support?",
+                  "answer": "<p>CloudFlow connects with 150+ tools including Slack, Salesforce, HubSpot, Stripe, Google Workspace, Microsoft 365, Jira, GitHub, and many more. We also offer a REST API and webhooks for custom integrations.</p>"
+                },
+                {
+                  "__typename": "ParagraphFaqItem",
+                  "id": "faq-4",
+                  "title": "",
+                  "question": "Is my data secure?",
+                  "answer": "<p>Absolutely. CloudFlow is SOC 2 Type II certified with end-to-end encryption, SSO support, and role-based access controls. We never sell your data and comply with GDPR, CCPA, and HIPAA requirements.</p>"
+                },
+                {
+                  "__typename": "ParagraphFaqItem",
+                  "id": "faq-5",
+                  "title": "",
+                  "question": "What happens if I exceed my task limit?",
+                  "answer": "<p>We'll notify you when you reach 80% of your plan limit. You can upgrade anytime, and we never stop your workflows mid-execution. Overages are billed at a reasonable per-task rate.</p>"
+                }
+              ]
+            },
+            {
+              "__typename": "ParagraphCtaSection",
+              "id": "cta-main",
+              "title": "Ready to automate your workflows?",
+              "eyebrow": "Get Started",
+              "subtitle": {
+                "processed": "Join 10,000+ teams that trust CloudFlow to run their business. Start your free trial today -- no credit card required.",
+                "summary": "Join 10,000+ teams that trust CloudFlow to run their business. Start your free trial today -- no credit card required."
+              },
+              "primaryCtaText": "Start Free Trial",
+              "primaryCtaUrl": "/signup",
+              "secondaryCtaText": "Talk to Sales",
+              "secondaryCtaUrl": "/contact-sales",
+              "backgroundColor": "dark"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "/features": {
+    "data": {
+      "route": {
+        "__typename": "RouteInternal",
+        "entity": {
+          "__typename": "NodeLandingPage",
+          "id": "features-page",
+          "title": "Features | CloudFlow",
+          "path": "/features",
+          "sections": [
+            {
+              "__typename": "ParagraphHeroSection",
+              "id": "features-hero",
+              "title": "Built for teams that move fast",
+              "eyebrow": "Features",
+              "subtitle": {
+                "processed": "Discover the tools and capabilities that make CloudFlow the platform of choice for high-performing teams.",
+                "summary": "Discover the tools and capabilities that make CloudFlow the platform of choice for high-performing teams."
+              },
+              "layout": "centered",
+              "backgroundColor": "gradient"
+            },
+            {
+              "__typename": "ParagraphFeatureGrid",
+              "id": "features-section",
+              "title": "Everything you need to scale operations",
+              "eyebrow": "Features",
+              "subtitle": {
+                "processed": "A unified platform that replaces a dozen tools. Built for teams that demand speed, reliability, and flexibility.",
+                "summary": "A unified platform that replaces a dozen tools. Built for teams that demand speed, reliability, and flexibility."
+              },
+              "columns": "3",
+              "cards": [
+                {
+                  "__typename": "ParagraphFeatureCard",
+                  "id": "feature-card-1",
+                  "title": "Visual Workflow Builder",
+                  "icon": "Workflow",
+                  "description": {
+                    "processed": "Design complex automations with our drag-and-drop builder. No code required. Connect triggers, conditions, and actions in minutes.",
+                    "summary": "Design complex automations with our drag-and-drop builder. No code required. Connect triggers, conditions, and actions in minutes."
+                  },
+                  "linkText": "Learn more",
+                  "linkUrl": "/features/workflows"
+                },
+                {
+                  "__typename": "ParagraphFeatureCard",
+                  "id": "feature-card-2",
+                  "title": "Real-Time Analytics",
+                  "icon": "BarChart3",
+                  "description": {
+                    "processed": "Track every metric that matters. Custom dashboards, automated reports, and AI-powered insights delivered to your inbox.",
+                    "summary": "Track every metric that matters. Custom dashboards, automated reports, and AI-powered insights delivered to your inbox."
+                  },
+                  "linkText": "Learn more",
+                  "linkUrl": "/features/analytics"
+                },
+                {
+                  "__typename": "ParagraphFeatureCard",
+                  "id": "feature-card-3",
+                  "title": "Enterprise Security",
+                  "icon": "Shield",
+                  "description": {
+                    "processed": "SOC 2 Type II certified. End-to-end encryption, SSO, RBAC, and audit logs. Your data is protected at every layer.",
+                    "summary": "SOC 2 Type II certified. End-to-end encryption, SSO, RBAC, and audit logs. Your data is protected at every layer."
+                  },
+                  "linkText": "Learn more",
+                  "linkUrl": "/features/security"
+                },
+                {
+                  "__typename": "ParagraphFeatureCard",
+                  "id": "feature-card-4",
+                  "title": "150+ Integrations",
+                  "icon": "Plug",
+                  "description": {
+                    "processed": "Connect CloudFlow with Slack, Salesforce, HubSpot, Stripe, and 150+ other tools your team already uses.",
+                    "summary": "Connect CloudFlow with Slack, Salesforce, HubSpot, Stripe, and 150+ other tools your team already uses."
+                  },
+                  "linkText": "View integrations",
+                  "linkUrl": "/integrations"
+                },
+                {
+                  "__typename": "ParagraphFeatureCard",
+                  "id": "feature-card-5",
+                  "title": "Team Collaboration",
+                  "icon": "Users",
+                  "description": {
+                    "processed": "Shared workspaces, real-time editing, comments, and approvals. Keep everyone aligned and moving fast.",
+                    "summary": "Shared workspaces, real-time editing, comments, and approvals. Keep everyone aligned and moving fast."
+                  },
+                  "linkText": "Learn more",
+                  "linkUrl": "/features/collaboration"
+                },
+                {
+                  "__typename": "ParagraphFeatureCard",
+                  "id": "feature-card-6",
+                  "title": "AI Assistant",
+                  "icon": "Bot",
+                  "description": {
+                    "processed": "Let CloudFlow AI suggest optimizations, detect anomalies, and automate repetitive tasks across your workflows.",
+                    "summary": "Let CloudFlow AI suggest optimizations, detect anomalies, and automate repetitive tasks across your workflows."
+                  },
+                  "linkText": "Learn more",
+                  "linkUrl": "/features/ai"
+                }
+              ]
+            },
+            {
+              "__typename": "ParagraphTextBlock",
+              "id": "features-text",
+              "title": "Why CloudFlow?",
+              "content": "<p>CloudFlow was built from the ground up to solve the operational challenges that hold teams back. We combine workflow automation, real-time analytics, and seamless integrations into a single platform that your entire organization can rally around.</p><p>Unlike point solutions that only address one problem, CloudFlow connects your entire operational stack -- from lead generation to customer success -- giving you end-to-end visibility and control.</p>",
+              "alignment": "left",
+              "ctaText": "Start Free Trial",
+              "ctaUrl": "/signup"
+            },
+            {
+              "__typename": "ParagraphStats",
+              "id": "stats-section",
+              "title": "",
+              "backgroundColor": "light",
+              "stats": [
+                {
+                  "__typename": "ParagraphStatItem",
+                  "id": "stat-1",
+                  "title": "",
+                  "value": "10K+",
+                  "label": "Active Teams",
+                  "description": "Companies trust CloudFlow daily"
+                },
+                {
+                  "__typename": "ParagraphStatItem",
+                  "id": "stat-2",
+                  "title": "",
+                  "value": "99.99%",
+                  "label": "Uptime SLA",
+                  "description": "Enterprise-grade reliability"
+                },
+                {
+                  "__typename": "ParagraphStatItem",
+                  "id": "stat-3",
+                  "title": "",
+                  "value": "3.2M",
+                  "label": "Workflows Run",
+                  "description": "Automated tasks last month"
+                },
+                {
+                  "__typename": "ParagraphStatItem",
+                  "id": "stat-4",
+                  "title": "",
+                  "value": "150+",
+                  "label": "Integrations",
+                  "description": "Connect any tool in your stack"
+                }
+              ]
+            },
+            {
+              "__typename": "ParagraphCtaSection",
+              "id": "cta-main",
+              "title": "Ready to automate your workflows?",
+              "eyebrow": "Get Started",
+              "subtitle": {
+                "processed": "Join 10,000+ teams that trust CloudFlow to run their business. Start your free trial today -- no credit card required.",
+                "summary": "Join 10,000+ teams that trust CloudFlow to run their business. Start your free trial today -- no credit card required."
+              },
+              "primaryCtaText": "Start Free Trial",
+              "primaryCtaUrl": "/signup",
+              "secondaryCtaText": "Talk to Sales",
+              "secondaryCtaUrl": "/contact-sales",
+              "backgroundColor": "dark"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "/pricing": {
+    "data": {
+      "route": {
+        "__typename": "RouteInternal",
+        "entity": {
+          "__typename": "NodeLandingPage",
+          "id": "pricing-page",
+          "title": "Pricing | CloudFlow",
+          "path": "/pricing",
+          "sections": [
+            {
+              "__typename": "ParagraphHeroSection",
+              "id": "pricing-hero",
+              "title": "Plans that scale with your business",
+              "eyebrow": "Pricing",
+              "subtitle": {
+                "processed": "Start free, pay only for what you use. Upgrade or downgrade anytime.",
+                "summary": "Start free, pay only for what you use. Upgrade or downgrade anytime."
+              },
+              "layout": "centered"
+            },
+            {
+              "__typename": "ParagraphPricingTable",
+              "id": "pricing-section",
+              "title": "Simple, predictable pricing",
+              "eyebrow": "Pricing",
+              "subtitle": {
+                "processed": "Start free. Upgrade when you're ready. No surprises on your bill.",
+                "summary": "Start free. Upgrade when you're ready. No surprises on your bill."
+              },
+              "tiers": [
+                {
+                  "__typename": "ParagraphPricingTier",
+                  "id": "pricing-free",
+                  "title": "",
+                  "name": "Free",
+                  "price": "$0",
+                  "billingPeriod": "forever",
+                  "description": "For individuals and small projects",
+                  "features": [
+                    "Up to 5 workflows",
+                    "1,000 tasks/month",
+                    "3 integrations",
+                    "Community support",
+                    "Basic analytics"
+                  ],
+                  "isFeatured": false,
+                  "ctaText": "Get Started",
+                  "ctaUrl": "/signup?plan=free"
+                },
+                {
+                  "__typename": "ParagraphPricingTier",
+                  "id": "pricing-pro",
+                  "title": "",
+                  "name": "Pro",
+                  "price": "$49",
+                  "billingPeriod": "/month",
+                  "description": "For growing teams and businesses",
+                  "features": [
+                    "Unlimited workflows",
+                    "50,000 tasks/month",
+                    "All integrations",
+                    "Priority support",
+                    "Advanced analytics",
+                    "Custom dashboards",
+                    "Team workspaces",
+                    "API access"
+                  ],
+                  "isFeatured": true,
+                  "ctaText": "Start Free Trial",
+                  "ctaUrl": "/signup?plan=pro"
+                },
+                {
+                  "__typename": "ParagraphPricingTier",
+                  "id": "pricing-enterprise",
+                  "title": "",
+                  "name": "Enterprise",
+                  "price": "Custom",
+                  "billingPeriod": "",
+                  "description": "For large organizations with custom needs",
+                  "features": [
+                    "Everything in Pro",
+                    "Unlimited tasks",
+                    "SSO & SAML",
+                    "Dedicated account manager",
+                    "Custom SLA",
+                    "On-premise deployment",
+                    "Advanced security controls",
+                    "Custom integrations"
+                  ],
+                  "isFeatured": false,
+                  "ctaText": "Contact Sales",
+                  "ctaUrl": "/contact-sales"
+                }
+              ]
+            },
+            {
+              "__typename": "ParagraphAccordion",
+              "id": "faq-section",
+              "title": "Frequently asked questions",
+              "eyebrow": "FAQ",
+              "subtitle": {
+                "processed": "Everything you need to know about CloudFlow. Can't find your answer? Contact our support team.",
+                "summary": "Everything you need to know about CloudFlow. Can't find your answer? Contact our support team."
+              },
+              "items": [
+                {
+                  "__typename": "ParagraphFaqItem",
+                  "id": "faq-1",
+                  "title": "",
+                  "question": "How quickly can I get started with CloudFlow?",
+                  "answer": "<p>You can sign up and build your first workflow in under 5 minutes. Our templates library has 200+ pre-built automations for common use cases like lead routing, customer onboarding, and invoice processing.</p>"
+                },
+                {
+                  "__typename": "ParagraphFaqItem",
+                  "id": "faq-2",
+                  "title": "",
+                  "question": "Can I migrate from my current automation tool?",
+                  "answer": "<p>Yes. We offer free migration assistance for Pro and Enterprise plans. Our team will help you recreate your workflows in CloudFlow and ensure zero downtime during the transition.</p>"
+                },
+                {
+                  "__typename": "ParagraphFaqItem",
+                  "id": "faq-3",
+                  "title": "",
+                  "question": "What integrations do you support?",
+                  "answer": "<p>CloudFlow connects with 150+ tools including Slack, Salesforce, HubSpot, Stripe, Google Workspace, Microsoft 365, Jira, GitHub, and many more. We also offer a REST API and webhooks for custom integrations.</p>"
+                },
+                {
+                  "__typename": "ParagraphFaqItem",
+                  "id": "faq-4",
+                  "title": "",
+                  "question": "Is my data secure?",
+                  "answer": "<p>Absolutely. CloudFlow is SOC 2 Type II certified with end-to-end encryption, SSO support, and role-based access controls. We never sell your data and comply with GDPR, CCPA, and HIPAA requirements.</p>"
+                },
+                {
+                  "__typename": "ParagraphFaqItem",
+                  "id": "faq-5",
+                  "title": "",
+                  "question": "What happens if I exceed my task limit?",
+                  "answer": "<p>We'll notify you when you reach 80% of your plan limit. You can upgrade anytime, and we never stop your workflows mid-execution. Overages are billed at a reasonable per-task rate.</p>"
+                }
+              ]
+            },
+            {
+              "__typename": "ParagraphCtaSection",
+              "id": "cta-main",
+              "title": "Ready to automate your workflows?",
+              "eyebrow": "Get Started",
+              "subtitle": {
+                "processed": "Join 10,000+ teams that trust CloudFlow to run their business. Start your free trial today -- no credit card required.",
+                "summary": "Join 10,000+ teams that trust CloudFlow to run their business. Start your free trial today -- no credit card required."
+              },
+              "primaryCtaText": "Start Free Trial",
+              "primaryCtaUrl": "/signup",
+              "secondaryCtaText": "Talk to Sales",
+              "secondaryCtaUrl": "/contact-sales",
+              "backgroundColor": "dark"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "/about": {
+    "data": {
+      "route": {
+        "__typename": "RouteInternal",
+        "entity": {
+          "__typename": "NodeLandingPage",
+          "id": "about-page",
+          "title": "About CloudFlow",
+          "path": "/about",
+          "sections": [
+            {
+              "__typename": "ParagraphHeroSection",
+              "id": "about-hero",
+              "title": "We're building the future of work automation",
+              "eyebrow": "About Us",
+              "subtitle": {
+                "processed": "Founded in 2021, CloudFlow was born from a simple idea: teams shouldn't spend time on repetitive tasks when software can do it better.",
+                "summary": "Founded in 2021, CloudFlow was born from a simple idea: teams shouldn't spend time on repetitive tasks when software can do it better."
+              },
+              "layout": "centered",
+              "backgroundColor": "light"
+            },
+            {
+              "__typename": "ParagraphTextBlock",
+              "id": "about-text",
+              "title": "Our Mission",
+              "content": "<p>At CloudFlow, we believe that every team deserves access to powerful automation tools -- not just enterprises with massive IT budgets. Our mission is to democratize workflow automation, making it accessible, affordable, and delightful to use.</p><p>We're a team of 85 people spread across San Francisco, London, and Singapore. We're backed by leading venture firms and are profitable, serving customers in over 40 countries.</p>",
+              "alignment": "left"
+            },
+            {
+              "__typename": "ParagraphStats",
+              "id": "stats-section",
+              "title": "",
+              "backgroundColor": "light",
+              "stats": [
+                {
+                  "__typename": "ParagraphStatItem",
+                  "id": "stat-1",
+                  "title": "",
+                  "value": "10K+",
+                  "label": "Active Teams",
+                  "description": "Companies trust CloudFlow daily"
+                },
+                {
+                  "__typename": "ParagraphStatItem",
+                  "id": "stat-2",
+                  "title": "",
+                  "value": "99.99%",
+                  "label": "Uptime SLA",
+                  "description": "Enterprise-grade reliability"
+                },
+                {
+                  "__typename": "ParagraphStatItem",
+                  "id": "stat-3",
+                  "title": "",
+                  "value": "3.2M",
+                  "label": "Workflows Run",
+                  "description": "Automated tasks last month"
+                },
+                {
+                  "__typename": "ParagraphStatItem",
+                  "id": "stat-4",
+                  "title": "",
+                  "value": "150+",
+                  "label": "Integrations",
+                  "description": "Connect any tool in your stack"
+                }
+              ]
+            },
+            {
+              "__typename": "ParagraphFeatureGrid",
+              "id": "team-section",
+              "title": "Meet the team behind CloudFlow",
+              "eyebrow": "Leadership",
+              "columns": "4",
+              "cards": [
+                {
+                  "__typename": "ParagraphFeatureCard",
+                  "id": "team-card-1",
+                  "title": "Maya Chen",
+                  "icon": "User",
+                  "description": {
+                    "processed": "CEO & Co-founder. Previously product lead at Atlassian.",
+                    "summary": "CEO & Co-founder. Previously product lead at Atlassian."
+                  },
+                  "linkText": "LinkedIn",
+                  "linkUrl": "#"
+                },
+                {
+                  "__typename": "ParagraphFeatureCard",
+                  "id": "team-card-2",
+                  "title": "James Okafor",
+                  "icon": "User",
+                  "description": {
+                    "processed": "CTO & Co-founder. Former principal engineer at AWS.",
+                    "summary": "CTO & Co-founder. Former principal engineer at AWS."
+                  },
+                  "linkText": "LinkedIn",
+                  "linkUrl": "#"
+                },
+                {
+                  "__typename": "ParagraphFeatureCard",
+                  "id": "team-card-3",
+                  "title": "Sophie Laurent",
+                  "icon": "User",
+                  "description": {
+                    "processed": "VP Engineering. Built infrastructure teams at Datadog.",
+                    "summary": "VP Engineering. Built infrastructure teams at Datadog."
+                  },
+                  "linkText": "LinkedIn",
+                  "linkUrl": "#"
+                },
+                {
+                  "__typename": "ParagraphFeatureCard",
+                  "id": "team-card-4",
+                  "title": "Arun Mehta",
+                  "icon": "User",
+                  "description": {
+                    "processed": "VP Product. Former head of product at Notion.",
+                    "summary": "VP Product. Former head of product at Notion."
+                  },
+                  "linkText": "LinkedIn",
+                  "linkUrl": "#"
+                }
+              ]
+            },
+            {
+              "__typename": "ParagraphCtaSection",
+              "id": "cta-main",
+              "title": "Ready to automate your workflows?",
+              "eyebrow": "Get Started",
+              "subtitle": {
+                "processed": "Join 10,000+ teams that trust CloudFlow to run their business. Start your free trial today -- no credit card required.",
+                "summary": "Join 10,000+ teams that trust CloudFlow to run their business. Start your free trial today -- no credit card required."
+              },
+              "primaryCtaText": "Start Free Trial",
+              "primaryCtaUrl": "/signup",
+              "secondaryCtaText": "Talk to Sales",
+              "secondaryCtaUrl": "/contact-sales",
+              "backgroundColor": "dark"
+            }
+          ]
+        }
+      }
+    }
+  }
+}
