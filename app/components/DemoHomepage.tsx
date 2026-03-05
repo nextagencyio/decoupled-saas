@@ -1,6 +1,5 @@
 'use client'
 
-import Header from './Header'
 import ParagraphHero from './paragraphs/ParagraphHero'
 import ParagraphLogoCollection from './paragraphs/ParagraphLogoCollection'
 import ParagraphStats from './paragraphs/ParagraphStats'
@@ -114,7 +113,6 @@ const demoData = {
 export default function DemoHomepage() {
   return (
     <div className="min-h-screen bg-white">
-      <Header />
       <ParagraphHero {...demoData.hero} />
       <ParagraphLogoCollection {...demoData.logos} />
       <ParagraphStats {...demoData.stats} />
