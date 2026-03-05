@@ -218,9 +218,9 @@
           "alt": "Abstract cloud technology background"
         },
         "primary_cta_text": "Start Free Trial",
-        "primary_cta_url": "/signup",
+        "primary_cta_url": "/features",
         "secondary_cta_text": "Watch Demo",
-        "secondary_cta_url": "/demo"
+        "secondary_cta_url": "/features"
       }
     },
     {
@@ -532,7 +532,7 @@
         "title": "Ready to automate your workflows?",
         "subtitle": "Join 10,000+ teams that trust CloudFlow to run their business. Start your free trial today -- no credit card required.",
         "primary_cta_text": "Start Free Trial",
-        "primary_cta_url": "/signup",
+        "primary_cta_url": "/features",
         "secondary_cta_text": "Talk to Sales",
         "secondary_cta_url": "/contact-sales",
         "background_color": "dark"
@@ -575,7 +575,7 @@
         "content": "<p>CloudFlow was built from the ground up to solve the operational challenges that hold teams back. We combine workflow automation, real-time analytics, and seamless integrations into a single platform that your entire organization can rally around.</p><p>Unlike point solutions that only address one problem, CloudFlow connects your entire operational stack -- from lead generation to customer success -- giving you end-to-end visibility and control.</p>",
         "alignment": "left",
         "cta_text": "Start Free Trial",
-        "cta_url": "/signup"
+        "cta_url": "/features"
       }
     },
     {
@@ -670,7 +670,7 @@
     {
       "id": "about-page",
       "type": "node.landing_page",
-      "path": "/about",
+      "path": "/features",
       "values": {
         "title": "About CloudFlow",
         "sections": [

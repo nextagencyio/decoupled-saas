@@ -9,7 +9,7 @@ const footerLinks = {
     { name: 'Changelog', href: '/changelog' },
   ],
   company: [
-    { name: 'About', href: '/about' },
+    { name: 'About', href: '/features' },
     { name: 'Blog', href: '/blog' },
     { name: 'Careers', href: '/careers' },
     { name: 'Contact', href: '/contact' },

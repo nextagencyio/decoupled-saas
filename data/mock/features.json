@@ -47,9 +47,9 @@
                 ]
               },
               "primaryCtaText": "Start Free Trial",
-              "primaryCtaUrl": "/signup",
+              "primaryCtaUrl": "/features",
               "secondaryCtaText": "Watch Demo",
-              "secondaryCtaUrl": "/demo"
+              "secondaryCtaUrl": "/features"
             },
             {
               "__typename": "ParagraphLogoCollection",
@@ -475,7 +475,7 @@
                 "summary": "Join 10,000+ teams that trust CloudFlow to run their business. Start your free trial today -- no credit card required."
               },
               "primaryCtaText": "Start Free Trial",
-              "primaryCtaUrl": "/signup",
+              "primaryCtaUrl": "/features",
               "secondaryCtaText": "Talk to Sales",
               "secondaryCtaUrl": "/contact-sales",
               "backgroundColor": "dark"
@@ -592,7 +592,7 @@
               "content": "<p>CloudFlow was built from the ground up to solve the operational challenges that hold teams back. We combine workflow automation, real-time analytics, and seamless integrations into a single platform that your entire organization can rally around.</p><p>Unlike point solutions that only address one problem, CloudFlow connects your entire operational stack -- from lead generation to customer success -- giving you end-to-end visibility and control.</p>",
               "alignment": "left",
               "ctaText": "Start Free Trial",
-              "ctaUrl": "/signup"
+              "ctaUrl": "/features"
             },
             {
               "__typename": "ParagraphStats",
@@ -644,7 +644,7 @@
                 "summary": "Join 10,000+ teams that trust CloudFlow to run their business. Start your free trial today -- no credit card required."
               },
               "primaryCtaText": "Start Free Trial",
-              "primaryCtaUrl": "/signup",
+              "primaryCtaUrl": "/features",
               "secondaryCtaText": "Talk to Sales",
               "secondaryCtaUrl": "/contact-sales",
               "backgroundColor": "dark"
@@ -800,7 +800,7 @@
                 "summary": "Join 10,000+ teams that trust CloudFlow to run their business. Start your free trial today -- no credit card required."
               },
               "primaryCtaText": "Start Free Trial",
-              "primaryCtaUrl": "/signup",
+              "primaryCtaUrl": "/features",
               "secondaryCtaText": "Talk to Sales",
               "secondaryCtaUrl": "/contact-sales",
               "backgroundColor": "dark"
@@ -811,7 +811,7 @@
           "__typename": "NodeLandingPage",
           "id": "about-page",
           "title": "About CloudFlow",
-          "path": "/about",
+          "path": "/features",
           "sections": [
             {
               "__typename": "ParagraphHeroSection",
@@ -939,7 +939,7 @@
                 "summary": "Join 10,000+ teams that trust CloudFlow to run their business. Start your free trial today -- no credit card required."
               },
               "primaryCtaText": "Start Free Trial",
-              "primaryCtaUrl": "/signup",
+              "primaryCtaUrl": "/features",
               "secondaryCtaText": "Talk to Sales",
               "secondaryCtaUrl": "/contact-sales",
               "backgroundColor": "dark"
