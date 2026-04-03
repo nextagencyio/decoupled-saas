@@ -2,7 +2,19 @@
 
 import { clsx } from 'clsx'
 import * as LucideIcons from 'lucide-react'
-import type { ParagraphSidebyside as ParagraphSidebysideType } from '@/lib/types'
+// ParagraphSidebyside is not in the current GraphQL schema but kept for future use
+interface ParagraphSidebysideType {
+  __typename: 'ParagraphSidebyside'
+  id: string
+  eyebrow?: string
+  title: string
+  content?: string
+  image?: { url: string; alt?: string; width?: number; height?: number }
+  imagePosition?: 'left' | 'right'
+  features?: Array<{ id: string; icon?: string; title: string; description?: string }>
+  ctaText?: string
+  ctaUrl?: string
+}
 import Badge from '../ui/Badge'
 import Button from '../ui/Button'
 import { Check } from 'lucide-react'

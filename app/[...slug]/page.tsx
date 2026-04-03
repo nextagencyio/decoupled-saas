@@ -1,11 +1,35 @@
 import { getClient } from '@/lib/drupal-client'
+import { GET_LANDING_PAGE } from '@/lib/queries'
+import { ParagraphList } from '../components/paragraphs/ParagraphRenderer'
 import ErrorBoundary from '../components/ErrorBoundary'
-import HomepageRenderer from '../components/HomepageRenderer'
 import ResponsiveImage from '../components/ResponsiveImage'
 import { Metadata } from 'next'
+import type { ParagraphType } from '@/lib/types'
 
 export const revalidate = 300
 export const dynamic = 'force-dynamic'
+
+// Helper to extract .value from Text type fields
+function extractTextValue(obj: unknown): unknown {
+  if (obj === null || obj === undefined) return obj
+  if (typeof obj !== 'object') return obj
+  if (Array.isArray(obj)) return obj.map(extractTextValue)
+
+  const record = obj as Record<string, unknown>
+  if ('value' in record && typeof record.value === 'string' && Object.keys(record).length <= 3) {
+    return record.value
+  }
+
+  const result: Record<string, unknown> = {}
+  for (const [key, value] of Object.entries(record)) {
+    result[key] = extractTextValue(value)
+  }
+  return result
+}
+
+function transformSections(sections: unknown[]): ParagraphType[] {
+  return sections.map(section => extractTextValue(section)) as ParagraphType[]
+}
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string[] }> }): Promise<Metadata> {
   const resolvedParams = await params
@@ -38,11 +62,13 @@ export default async function GenericPage({ params }: { params: Promise<{ slug: 
   const client = getClient()
 
   try {
-    const entity = await client.getEntryByPath(path) as any
+    // Use the full landing page query with all paragraph fragments
+    const data = await client.raw(GET_LANDING_PAGE, { path })
+    const entity = data?.route?.entity
+
     if (!entity) {
       return (
         <div className="min-h-screen bg-gray-50">
-
           <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
             <PageNotFound path={path} />
           </main>
@@ -50,10 +76,17 @@ export default async function GenericPage({ params }: { params: Promise<{ slug: 
       )
     }
 
-    if (entity.__typename === 'NodeHomepage') {
-      return <HomepageRenderer homepageContent={entity} />
+    // If it's a NodeLandingPage with sections, render with ParagraphList
+    if (entity.sections) {
+      const sections = transformSections(entity.sections || [])
+      return (
+        <>
+          <ParagraphList sections={sections} />
+        </>
+      )
     }
 
+    // Fallback: render as basic page
     const title = entity.title || 'Untitled'
     const bodyHtml = entity?.body?.processed || ''
     const image = entity?.image

@@ -30,15 +30,23 @@ export function createTypedClient(client: DecoupledClient): TypedClient {
     async getEntries() { return [] },
     async getEntry() { return null },
     async getEntryByPath(path) {
-      return client.queryByPath(path, `
+      const data = await client.query(`
         query ($path: String!) {
           route(path: $path) {
             ... on RouteInternal {
-              entity { ... on NodePage { __typename id title path body { processed } } }
+              entity {
+                __typename
+                ... on NodeLandingPage {
+                  id
+                  title
+                  path
+                }
+              }
             }
           }
         }
-      `)
+      `, { path })
+      return data?.route?.entity || null
     },
     async raw(query, variables) { return client.query(query, variables) },
   }

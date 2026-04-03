@@ -3,7 +3,7 @@ const gql = (strings: TemplateStringsArray, ...values: any[]) => strings.reduce(
 
 // Fragment for all paragraph types
 const PARAGRAPH_FRAGMENTS = gql`
-  fragment HeroFields on ParagraphHero {
+  fragment HeroFields on ParagraphHeroSection {
     id
     eyebrow
     title
@@ -22,54 +22,26 @@ const PARAGRAPH_FRAGMENTS = gql`
     secondaryCtaUrl
   }
 
-  fragment CardFields on ParagraphCard {
+  fragment CardFields on ParagraphFeatureCard {
     id
     icon
     title
-    description { value }
+    description
     linkText
     linkUrl
   }
 
-  fragment CardGroupFields on ParagraphCardGroup {
+  fragment CardGroupFields on ParagraphFeatureGrid {
     id
     eyebrow
     title
     subtitle { value }
     columns
     cards {
-      ... on ParagraphCard {
+      ... on ParagraphFeatureCard {
         ...CardFields
       }
     }
-  }
-
-  fragment FeatureItemFields on ParagraphFeatureItem {
-    id
-    icon
-    title
-    description { value }
-  }
-
-  fragment SidebysideFields on ParagraphSidebyside {
-    id
-    eyebrow
-    title
-    content { value }
-    image {
-      url
-      alt
-      width
-      height
-    }
-    imagePosition
-    features {
-      ... on ParagraphFeatureItem {
-        ...FeatureItemFields
-      }
-    }
-    ctaText
-    ctaUrl
   }
 
   fragment FaqItemFields on ParagraphFaqItem {
@@ -103,7 +75,7 @@ const PARAGRAPH_FRAGMENTS = gql`
     rating
   }
 
-  fragment QuoteFields on ParagraphQuote {
+  fragment QuoteFields on ParagraphTestimonialSlider {
     id
     eyebrow
     title
@@ -120,13 +92,13 @@ const PARAGRAPH_FRAGMENTS = gql`
     name
     price
     billingPeriod
-    description { value }
+    description
     isFeatured
     ctaText
     ctaUrl
   }
 
-  fragment PricingFields on ParagraphPricing {
+  fragment PricingFields on ParagraphPricingTable {
     id
     eyebrow
     title
@@ -163,7 +135,7 @@ const PARAGRAPH_FRAGMENTS = gql`
     id
     value
     label
-    description { value }
+    description
   }
 
   fragment StatsFields on ParagraphStat {
@@ -178,14 +150,16 @@ const PARAGRAPH_FRAGMENTS = gql`
     }
   }
 
-  fragment NewsletterFields on ParagraphNewsletter {
+  fragment CtaSectionFields on ParagraphCtaSection {
     id
     eyebrow
     title
     subtitle { value }
-    placeholder
-    buttonText
     backgroundColor
+    primaryCtaText
+    primaryCtaUrl
+    secondaryCtaText
+    secondaryCtaUrl
   }
 
   fragment TextFields on ParagraphTextBlock {
@@ -212,22 +186,19 @@ export const GET_LANDING_PAGE = gql`
             path
             sections {
               __typename
-              ... on ParagraphHero {
+              ... on ParagraphHeroSection {
                 ...HeroFields
               }
-              ... on ParagraphCardGroup {
+              ... on ParagraphFeatureGrid {
                 ...CardGroupFields
-              }
-              ... on ParagraphSidebyside {
-                ...SidebysideFields
               }
               ... on ParagraphAccordion {
                 ...AccordionFields
               }
-              ... on ParagraphQuote {
+              ... on ParagraphTestimonialSlider {
                 ...QuoteFields
               }
-              ... on ParagraphPricing {
+              ... on ParagraphPricingTable {
                 ...PricingFields
               }
               ... on ParagraphLogoCollection {
@@ -236,8 +207,8 @@ export const GET_LANDING_PAGE = gql`
               ... on ParagraphStat {
                 ...StatsFields
               }
-              ... on ParagraphNewsletter {
-                ...NewsletterFields
+              ... on ParagraphCtaSection {
+                ...CtaSectionFields
               }
               ... on ParagraphTextBlock {
                 ...TextFields

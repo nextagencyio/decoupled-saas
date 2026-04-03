@@ -3,7 +3,17 @@
 import { useState } from 'react'
 import { clsx } from 'clsx'
 import { Send, CheckCircle } from 'lucide-react'
-import type { ParagraphNewsletter as ParagraphNewsletterType } from '@/lib/types'
+// ParagraphNewsletter is not in the current GraphQL schema but kept for demo/future use
+interface ParagraphNewsletterType {
+  __typename: 'ParagraphNewsletter'
+  id: string
+  eyebrow?: string
+  title: string
+  subtitle?: string
+  placeholder?: string
+  buttonText?: string
+  backgroundColor?: 'light' | 'dark' | 'gradient'
+}
 import Badge from '../ui/Badge'
 import Button from '../ui/Button'
 

@@ -7,12 +7,12 @@ import ParagraphCardGroup from './paragraphs/ParagraphCardGroup'
 import ParagraphPricing from './paragraphs/ParagraphPricing'
 import ParagraphQuote from './paragraphs/ParagraphQuote'
 import ParagraphAccordion from './paragraphs/ParagraphAccordion'
-import ParagraphNewsletter from './paragraphs/ParagraphNewsletter'
+import ParagraphCtaSection from './paragraphs/ParagraphCtaSection'
 
 // Demo data for showcasing CloudFlow SaaS components without Drupal
 const demoData = {
   hero: {
-    __typename: 'ParagraphHero' as const,
+    __typename: 'ParagraphHeroSection' as const,
     id: 'hero-1',
     eyebrow: 'CloudFlow Platform',
     title: 'Automate your workflows. Accelerate your growth.',
@@ -49,7 +49,7 @@ const demoData = {
     ],
   },
   features: {
-    __typename: 'ParagraphCardGroup' as const,
+    __typename: 'ParagraphFeatureGrid' as const,
     id: 'features-1',
     eyebrow: 'Features',
     title: 'Everything you need to scale operations',
@@ -62,7 +62,7 @@ const demoData = {
     ],
   },
   pricing: {
-    __typename: 'ParagraphPricing' as const,
+    __typename: 'ParagraphPricingTable' as const,
     id: 'pricing-1',
     eyebrow: 'Pricing',
     title: 'Simple, predictable pricing',
@@ -74,7 +74,7 @@ const demoData = {
     ],
   },
   quotes: {
-    __typename: 'ParagraphQuote' as const,
+    __typename: 'ParagraphTestimonialSlider' as const,
     id: 'quotes-1',
     eyebrow: 'Customer Stories',
     title: 'Trusted by fast-growing teams',
@@ -98,15 +98,17 @@ const demoData = {
       { id: '4', question: 'Is my data secure?', answer: '<p>Absolutely. CloudFlow is SOC 2 Type II certified with end-to-end encryption, SSO support, and role-based access controls.</p>' },
     ],
   },
-  newsletter: {
-    __typename: 'ParagraphNewsletter' as const,
-    id: 'newsletter-1',
+  cta: {
+    __typename: 'ParagraphCtaSection' as const,
+    id: 'cta-1',
     eyebrow: 'Get Started',
     title: 'Ready to automate your workflows?',
     subtitle: 'Join 10,000+ teams that trust CloudFlow to run their business. Start your free trial today.',
-    placeholder: 'Enter your work email',
-    buttonText: 'Start Free Trial',
-    backgroundColor: 'dark' as const,
+    backgroundColor: 'dark',
+    primaryCtaText: 'Start Free Trial',
+    primaryCtaUrl: '/features',
+    secondaryCtaText: 'Contact Sales',
+    secondaryCtaUrl: '/features',
   },
 }
 
@@ -120,7 +122,7 @@ export default function DemoHomepage() {
       <ParagraphPricing {...demoData.pricing} />
       <ParagraphQuote {...demoData.quotes} />
       <ParagraphAccordion {...demoData.faq} />
-      <ParagraphNewsletter {...demoData.newsletter} />
+      <ParagraphCtaSection {...demoData.cta} />
     </div>
   )
 }

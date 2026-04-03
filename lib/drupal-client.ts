@@ -84,15 +84,19 @@ export function getClient(): TypedClient {
       async getEntries() { return [] },
       async getEntry() { return null },
       async getEntryByPath(path) {
-        return base.queryByPath(path, `
+        const data = await base.query(`
           query ($path: String!) {
             route(path: $path) {
               ... on RouteInternal {
-                entity { ... on NodePage { __typename id title path body { processed } } }
+                entity {
+                  __typename
+                  ... on NodeLandingPage { id title path }
+                }
               }
             }
           }
-        `)
+        `, { path })
+        return data?.route?.entity || null
       },
       async raw(query, variables) { return base.query(query, variables) },
     } as TypedClient

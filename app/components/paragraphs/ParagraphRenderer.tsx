@@ -3,13 +3,12 @@
 import type { ParagraphType } from '@/lib/types'
 import ParagraphHero from './ParagraphHero'
 import ParagraphCardGroup from './ParagraphCardGroup'
-import ParagraphSidebyside from './ParagraphSidebyside'
 import ParagraphAccordion from './ParagraphAccordion'
 import ParagraphQuote from './ParagraphQuote'
 import ParagraphPricing from './ParagraphPricing'
 import ParagraphLogoCollection from './ParagraphLogoCollection'
 import ParagraphStats from './ParagraphStats'
-import ParagraphNewsletter from './ParagraphNewsletter'
+import ParagraphCtaSection from './ParagraphCtaSection'
 import ParagraphText from './ParagraphText'
 
 interface ParagraphRendererProps {
@@ -18,24 +17,22 @@ interface ParagraphRendererProps {
 
 export default function ParagraphRenderer({ paragraph }: ParagraphRendererProps) {
   switch (paragraph.__typename) {
-    case 'ParagraphHero':
+    case 'ParagraphHeroSection':
       return <ParagraphHero {...paragraph} />
-    case 'ParagraphCardGroup':
+    case 'ParagraphFeatureGrid':
       return <ParagraphCardGroup {...paragraph} />
-    case 'ParagraphSidebyside':
-      return <ParagraphSidebyside {...paragraph} />
     case 'ParagraphAccordion':
       return <ParagraphAccordion {...paragraph} />
-    case 'ParagraphQuote':
+    case 'ParagraphTestimonialSlider':
       return <ParagraphQuote {...paragraph} />
-    case 'ParagraphPricing':
+    case 'ParagraphPricingTable':
       return <ParagraphPricing {...paragraph} />
     case 'ParagraphLogoCollection':
       return <ParagraphLogoCollection {...paragraph} />
     case 'ParagraphStat':
       return <ParagraphStats {...paragraph} />
-    case 'ParagraphNewsletter':
-      return <ParagraphNewsletter {...paragraph} />
+    case 'ParagraphCtaSection':
+      return <ParagraphCtaSection {...paragraph} />
     case 'ParagraphTextBlock':
       return <ParagraphText {...paragraph} />
     default:

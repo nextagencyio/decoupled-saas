@@ -26,17 +26,16 @@ export interface Image {
 export type ParagraphType =
   | ParagraphHero
   | ParagraphCardGroup
-  | ParagraphSidebyside
   | ParagraphAccordion
   | ParagraphQuote
   | ParagraphPricing
   | ParagraphLogoCollection
   | ParagraphStats
-  | ParagraphNewsletter
+  | ParagraphCtaSection
   | ParagraphText
 
 export interface ParagraphHero {
-  __typename: 'ParagraphHero'
+  __typename: 'ParagraphHeroSection'
   id: string
   eyebrow?: string
   title: string
@@ -60,7 +59,7 @@ export interface Card {
 }
 
 export interface ParagraphCardGroup {
-  __typename: 'ParagraphCardGroup'
+  __typename: 'ParagraphFeatureGrid'
   id: string
   eyebrow?: string
   title?: string
@@ -74,19 +73,6 @@ export interface FeatureItem {
   icon?: string
   title: string
   description?: string
-}
-
-export interface ParagraphSidebyside {
-  __typename: 'ParagraphSidebyside'
-  id: string
-  eyebrow?: string
-  title: string
-  content?: string
-  image?: Image
-  imagePosition?: 'left' | 'right'
-  features?: FeatureItem[]
-  ctaText?: string
-  ctaUrl?: string
 }
 
 export interface FaqItem {
@@ -115,7 +101,7 @@ export interface Testimonial {
 }
 
 export interface ParagraphQuote {
-  __typename: 'ParagraphQuote'
+  __typename: 'ParagraphTestimonialSlider'
   id: string
   eyebrow?: string
   title?: string
@@ -136,7 +122,7 @@ export interface PricingTier {
 }
 
 export interface ParagraphPricing {
-  __typename: 'ParagraphPricing'
+  __typename: 'ParagraphPricingTable'
   id: string
   eyebrow?: string
   title?: string
@@ -175,15 +161,17 @@ export interface ParagraphStats {
   stats: StatItem[]
 }
 
-export interface ParagraphNewsletter {
-  __typename: 'ParagraphNewsletter'
+export interface ParagraphCtaSection {
+  __typename: 'ParagraphCtaSection'
   id: string
   eyebrow?: string
   title: string
   subtitle?: string
-  placeholder?: string
-  buttonText?: string
-  backgroundColor?: 'light' | 'dark' | 'gradient'
+  backgroundColor?: string
+  primaryCtaText?: string
+  primaryCtaUrl?: string
+  secondaryCtaText?: string
+  secondaryCtaUrl?: string
 }
 
 export interface ParagraphText {
